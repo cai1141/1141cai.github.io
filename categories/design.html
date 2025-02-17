@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.designTitle">AI Design & Art Tools - Ag-888</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/categories.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1 class="logo-text">Ag-888</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.products">AI Products</a>
+                        <div class="dropdown-menu">
+                            <a href="#latest" data-i18n="nav.latest">Latest</a>
+                            <a href="#most-saved" data-i18n="nav.mostSaved">Most Saved</a>
+                            <a href="#most-visited" data-i18n="nav.mostVisited">Most Visited</a>
+                            <a href="#ai-apps" data-i18n="nav.aiApps">AI Apps</a>
+                            <a href="#discord" data-i18n="nav.discord">Discord of AI</a>
+                            <a href="#plugins" data-i18n="nav.plugins">AI Google Plugins</a>
+                            <a href="#gpts" data-i18n="nav.gpts">GPTs</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" class="active" data-i18n="nav.categories">Categories</a>
+                        <div class="dropdown-menu">
+                            <a href="writing.html" data-i18n="categories.writing">Writing & Text</a>
+                            <a href="image.html" data-i18n="categories.image">Image</a>
+                            <a href="video.html" data-i18n="categories.video">Video</a>
+                            <a href="code.html" data-i18n="categories.code">Code & IT</a>
+                            <a href="audio.html" data-i18n="categories.audio">Audio</a>
+                            <a href="business.html" data-i18n="categories.business">Business</a>
+                            <a href="marketing.html" data-i18n="categories.marketing">Marketing</a>
+                            <a href="detector.html" data-i18n="categories.detector">AI Detector</a>
+                            <a href="chatbot.html" data-i18n="categories.chatbot">Chatbot</a>
+                            <a href="design.html" class="active" data-i18n="categories.design">Design & Art</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.rankings">Rankings</a>
+                        <div class="dropdown-menu">
+                            <a href="../rankings/trending.html" data-i18n="rankings.trending">Trending</a>
+                            <a href="../rankings/popular.html" data-i18n="rankings.popular">Most Popular</a>
+                            <a href="../rankings/new.html" data-i18n="rankings.new">New Releases</a>
+                            <a href="../rankings/rated.html" data-i18n="rankings.rated">Top Rated</a>
+                            <a href="../rankings/free.html" data-i18n="rankings.free">Free Tools</a>
+                        </div>
+                    </li>
+                    <li><a href="#" data-i18n="nav.aiModels">AI Models</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn-submit" data-i18n="actions.submit">Submit</button>
+                <button class="btn-login" data-i18n="actions.login">Login</button>
+                <select class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <h1 data-i18n="design.title">AI Design & Art Tools</h1>
+            <p data-i18n="design.description">Discover AI tools for graphic design, digital art creation, and creative workflows.</p>
+        </section>
+
+        <section class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.8</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Figma AI</h3>
+                    <p>集成AI功能的设计工具，支持自动生成和优化设计。</p>
+                    <div class="tool-tags">
+                        <span class="tag">UI设计</span>
+                        <span class="tag">协作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.figma.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Canva AI</h3>
+                    <p data-i18n="tools.canva.description">Online design platform with AI-powered features for easy graphic creation.</p>
+                    <div class="tool-tags">
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Templates</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.canva.com" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Adobe Firefly</h3>
+                    <p>Adobe的AI创意工具，支持图像生成和创意编辑。</p>
+                    <div class="tool-tags">
+                        <span class="tag">创意工具</span>
+                        <span class="tag">Adobe</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.adobe.com/firefly" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Uizard</h3>
+                    <p>AI驱动的UI/UX设计工具，可快速将草图转换为设计。</p>
+                    <div class="tool-tags">
+                        <span class="tag">UI设计</span>
+                        <span class="tag">原型设计</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://uizard.io" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.4</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Artbreeder</h3>
+                    <p>AI艺术创作平台，支持图像混合和风格转换。</p>
+                    <div class="tool-tags">
+                        <span class="tag">艺术创作</span>
+                        <span class="tag">图像混合</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.artbreeder.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Eraser -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.8</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Eraser</h3>
+                    <p>AI驱动的白板和图表工具，帮助团队更好地协作。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI白板</span>
+                        <span class="tag">团队协作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Arco AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Arco AI</h3>
+                    <p>智能设计系统，提供设计资源和组件库。</p>
+                    <div class="tool-tags">
+                        <span class="tag">设计系统</span>
+                        <span class="tag">UI组件</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- MindMap AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>MindMap AI</h3>
+                    <p>AI驱动的思维导图工具，帮助组织和可视化想法。</p>
+                    <div class="tool-tags">
+                        <span class="tag">思维导图</span>
+                        <span class="tag">创意工具</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.terms">Terms of Use</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p>email@toolify.ai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">Copyright © 2025 Ag-888. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

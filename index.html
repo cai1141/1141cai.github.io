@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.title">AI工具导航 - Ag-888</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc; /* 更柔和的背景色 */
+            color: #333; /* 深色文本 */
+        }
+        .main-header {
+            background-color: #0056b3; /* 深蓝色 */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-header h1 {
+            color: white;
+            margin: 0;
+        }
+        .auth-links {
+            text-align: right;
+            margin: 10px 20px;
+        }
+        .auth-links a {
+            color: #ffffff; /* 白色 */
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #0056b3; /* 深蓝色 */
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .search-container {
+            margin-top: 20px;
+        }
+        .search-input {
+            padding: 12px;
+            width: 400px; /* 增加搜索栏宽度 */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+        .search-input:focus {
+            border-color: #004494;
+            outline: none;
+        }
+        .search-button {
+            padding: 12px 20px;
+            background-color: #004494; /* 更深的蓝色 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.3s;
+        }
+        .search-button:hover {
+            background-color: #003366; /* 更深的蓝色 */
+        }
+        .categories {
+            padding: 20px;
+            background-color: #ffffff; /* 白色背景 */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .categories h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        .categories a {
+            text-decoration: none;
+            color: #0056b3; /* 深蓝色 */
+            padding: 10px;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+        .categories a:hover {
+            color: white;
+            background-color: #0056b3; /* 深蓝色 */
+        }
+        .featured-section {
+            padding: 20px;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 增加卡片宽度 */
+            gap: 20px; /* 增加卡片间距 */
+        }
+        .tool-card {
+            background-color: #ffffff; /* 白色背景 */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        .footer-container {
+            background-color: #0056b3; /* 深蓝色 */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-section {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo-text">Ag-888</h1>
+        <div class="auth-links">
+            <a href="register.html">注册</a>
+            <a href="login.html">登录</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1 data-i18n="hero.title">发现最佳AI工具</h1>
+            <p data-i18n="hero.description">寻找并比较最具创新性的AI工具和应用</p>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    data-i18n="search.placeholder" 
+                    placeholder="搜索AI工具..."
+                    autocomplete="off"
+                >
+                <button class="search-button" data-i18n="actions.search">搜索</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 data-i18n="categories.title">分类</h2>
+            <ul id="category-list">
+                <li><a href="categories/writing.html" data-i18n="categories.writing">文字与写作</a></li>
+                <li><a href="categories/image.html" data-i18n="categories.image">图像生成</a></li>
+                <li><a href="categories/video.html" data-i18n="categories.video">视频创作</a></li>
+                <li><a href="categories/code.html" data-i18n="categories.code">代码助手</a></li>
+                <li><a href="categories/audio.html" data-i18n="categories.audio">音频工具</a></li>
+                <li><a href="categories/business.html" data-i18n="categories.business">商业工具</a></li>
+                <li><a href="categories/marketing.html" data-i18n="categories.marketing">营销工具</a></li>
+                <li><a href="categories/detector.html" data-i18n="categories.detector">AI检测器</a></li>
+                <li><a href="categories/chatbot.html" data-i18n="categories.chatbot">聊天机器人</a></li>
+                <li><a href="categories/design.html" data-i18n="categories.design">设计与艺术</a></li>
+            </ul>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="section-title" data-i18n="sections.featured">精选工具</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Voice to Notion</h3>
+                    <p>通过语音指令，将信息直接转入Notion。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Soul Machines</h3>
+                    <p>创建个性化的AI助手，提供人性化的互动体验。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Robots Do Marketing</h3>
+                    <p>为初创企业提供自动化营销解决方案。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+                <div class="tool-card">
+                    <h3>RiseON</h3>
+                    <p>全方位平台，用于职业生涯提升。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Perfect Outfits</h3>
+                    <p>为每个场合提供个性化的服装建议。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Your personal AI Email Assistant</h3>
+                    <p>智能邮件助手，帮助你管理日常邮件。</p>
+                    <button class="btn-save">保存</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 data-i18n="footer.about">关于</h3>
+                <ul>
+                    <li><a href="#" data-i18n="footer.terms">使用条款</a></li>
+                    <li><a href="#" data-i18n="footer.privacy">隐私政策</a></li>
+                    <li><a href="#" data-i18n="footer.contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">版权所有©2025年Ag-888。保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,151 @@
+.rankings-header {
+    margin-top: 80px;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #2563eb11, #2563eb22);
+}
+
+.rankings-header h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.rankings-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.rankings-nav {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 0;
+}
+
+.rankings-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tab-item {
+    padding: 0.5rem 1rem;
+    color: #64748b;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.tab-item:hover,
+.tab-item.active {
+    background: #f1f5f9;
+    color: var(--primary-color);
+}
+
+.rankings-filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time-filter {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #64748b;
+}
+
+.rankings-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ranking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.rank-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #94a3b8;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.tool-info {
+    flex: 1;
+}
+
+.tool-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.tool-stats {
+    display: flex;
+    gap: 1rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+.tool-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.stat:first-child {
+    color: #0ea5e9; /* 访问量统计使用蓝色 */
+}
+
+.stat:last-child {
+    color: #f59e0b; /* 收藏数使用橙色 */
+}
+
+@media (max-width: 768px) {
+    .ranking-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tool-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .tool-actions {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+} 

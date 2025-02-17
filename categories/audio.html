@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.audioTitle">AI Audio Tools - Ag-888</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/categories.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1 class="logo-text">Ag-888</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.products">AI Products</a>
+                        <div class="dropdown-menu">
+                            <a href="#latest" data-i18n="nav.latest">Latest</a>
+                            <a href="#most-saved" data-i18n="nav.mostSaved">Most Saved</a>
+                            <a href="#most-visited" data-i18n="nav.mostVisited">Most Visited</a>
+                            <a href="#ai-apps" data-i18n="nav.aiApps">AI Apps</a>
+                            <a href="#discord" data-i18n="nav.discord">Discord of AI</a>
+                            <a href="#plugins" data-i18n="nav.plugins">AI Google Plugins</a>
+                            <a href="#gpts" data-i18n="nav.gpts">GPTs</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" class="active" data-i18n="nav.categories">Categories</a>
+                        <div class="dropdown-menu">
+                            <a href="writing.html" data-i18n="categories.writing">Writing & Text</a>
+                            <a href="image.html" data-i18n="categories.image">Image</a>
+                            <a href="video.html" data-i18n="categories.video">Video</a>
+                            <a href="code.html" data-i18n="categories.code">Code & IT</a>
+                            <a href="audio.html" class="active" data-i18n="categories.audio">Audio</a>
+                            <a href="business.html" data-i18n="categories.business">Business</a>
+                            <a href="marketing.html" data-i18n="categories.marketing">Marketing</a>
+                            <a href="detector.html" data-i18n="categories.detector">AI Detector</a>
+                            <a href="chatbot.html" data-i18n="categories.chatbot">Chatbot</a>
+                            <a href="design.html" data-i18n="categories.design">Design & Art</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.rankings">Rankings</a>
+                        <div class="dropdown-menu">
+                            <a href="../rankings/trending.html" data-i18n="rankings.trending">Trending</a>
+                            <a href="../rankings/popular.html" data-i18n="rankings.popular">Most Popular</a>
+                            <a href="../rankings/new.html" data-i18n="rankings.new">New Releases</a>
+                            <a href="../rankings/rated.html" data-i18n="rankings.rated">Top Rated</a>
+                            <a href="../rankings/free.html" data-i18n="rankings.free">Free Tools</a>
+                        </div>
+                    </li>
+                    <li><a href="#" data-i18n="nav.aiModels">AI Models</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn-submit" data-i18n="actions.submit">Submit</button>
+                <button class="btn-login" data-i18n="actions.login">Login</button>
+                <select class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <h1 data-i18n="audio.title">AI Audio Tools</h1>
+            <p data-i18n="audio.description">Discover the best AI tools for audio generation, voice synthesis, music creation, and sound editing.</p>
+        </section>
+
+        <section class="tools-grid">
+            <!-- GenerateSong AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>GenerateSong AI</h3>
+                    <p>AI 音乐生成器将文本提示转化为独特的歌曲。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI音乐生成</span>
+                        <span class="tag">文本转音乐</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- GenSFX -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>GenSFX</h3>
+                    <p>生成自定义音效的 AI 工具，支持文本描述转换。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI音频增强</span>
+                        <span class="tag">音效生成</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Weights -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Weights</h3>
+                    <p>免费创建 AI 声音封面和图像。</p>
+                    <div class="tool-tags">
+                        <span class="tag">文本转语音</span>
+                        <span class="tag">AI语音合成</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="#" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Murf AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.8</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Murf AI</h3>
+                    <p data-i18n="tools.murf.description">Professional AI voice generator with natural-sounding voices in multiple languages.</p>
+                    <div class="tool-tags">
+                        <span class="tag">Voice Synthesis</span>
+                        <span class="tag">Text to Speech</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://murf.ai" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Elevenlabs -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Elevenlabs</h3>
+                    <p>最先进的AI语音生成技术，提供超自然的语音合成。</p>
+                    <div class="tool-tags">
+                        <span class="tag">语音克隆</span>
+                        <span class="tag">高质量</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://elevenlabs.io" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Play.ht -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Play.ht</h3>
+                    <p>AI语音生成平台，支持多语言和声音克隆功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag">文本转语音</span>
+                        <span class="tag">声音定制</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://play.ht" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Resemble AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Resemble AI</h3>
+                    <p>专业的AI语音克隆和合成平台，适合商业应用。</p>
+                    <div class="tool-tags">
+                        <span class="tag">语音克隆</span>
+                        <span class="tag">企业级</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.resemble.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Descript -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Descript</h3>
+                    <p data-i18n="tools.descript.description">All-in-one audio & video editing platform with AI voice cloning and transcription.</p>
+                    <div class="tool-tags">
+                        <span class="tag">Audio Editing</span>
+                        <span class="tag">Voice Cloning</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.descript.com" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Voicemod -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Voicemod</h3>
+                    <p>实时AI变声器，提供丰富的声音效果和语音修改功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag">实时变声</span>
+                        <span class="tag">语音效果</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.voicemod.net" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Soundraw -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Soundraw</h3>
+                    <p data-i18n="tools.soundraw.description">AI music generator for creating unique royalty-free background music.</p>
+                    <div class="tool-tags">
+                        <span class="tag">Music Generation</span>
+                        <span class="tag">Royalty Free</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://soundraw.io" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Boomy -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.3</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Boomy</h3>
+                    <p>AI音乐创作平台，让任何人都能创作和发布音乐。</p>
+                    <div class="tool-tags">
+                        <span class="tag">音乐创作</span>
+                        <span class="tag">音乐发布</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://boomy.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cleanvoice -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.3</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Cleanvoice</h3>
+                    <p>AI音频处理工具，自动清理语音中的噪音和口误。</p>
+                    <div class="tool-tags">
+                        <span class="tag">音频处理</span>
+                        <span class="tag">降噪</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://cleanvoice.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Altered -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Altered</h3>
+                    <p>AI语音变换工具，提供专业的声音修改和保护功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag">声音修改</span>
+                        <span class="tag">隐私保护</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.altered.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Beatoven.ai -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Beatoven.ai</h3>
+                    <p>AI背景音乐生成器，为视频和播客创作专业配乐。</p>
+                    <div class="tool-tags">
+                        <span class="tag">背景音乐</span>
+                        <span class="tag">配乐制作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.beatoven.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Podcastle -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Podcastle</h3>
+                    <p>AI驱动的播客制作平台，支持录音、编辑和转录。</p>
+                    <div class="tool-tags">
+                        <span class="tag">播客制作</span>
+                        <span class="tag">音频编辑</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://podcastle.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Krisp -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.1</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Krisp</h3>
+                    <p>实时AI降噪工具，消除背景噪音和回声。</p>
+                    <div class="tool-tags">
+                        <span class="tag">实时降噪</span>
+                        <span class="tag">音频增强</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://krisp.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Audiostack -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.1</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Audiostack</h3>
+                    <p>AI音频处理平台，提供专业的音频增强和修复功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag">音频处理</span>
+                        <span class="tag">音质提升</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://audiostack.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Synthesia.io -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.1</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Synthesia.io</h3>
+                    <p>AI视频生成平台，提供多语言配音和语音合成。</p>
+                    <div class="tool-tags">
+                        <span class="tag">视频配音</span>
+                        <span class="tag">多语言</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.synthesia.io" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>关于</h3>
+                <ul>
+                    <li><a href="#">Fulfillment Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>email@toolify.ai</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>版权所有©2025年Ag-888。保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

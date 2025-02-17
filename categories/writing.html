@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.writingTitle">文字与写作 AI工具 - Ag-888</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1 class="logo-text">Ag-888</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">AI产品</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">分类</a>
+                        <div class="dropdown-menu">
+                            <a href="writing.html" class="active" data-i18n="categories.writing">文字与写作</a>
+                            <a href="image.html" data-i18n="categories.image">图像</a>
+                            <a href="video.html" data-i18n="categories.video">视频</a>
+                            <a href="code.html" data-i18n="categories.code">代码&IT</a>
+                            <a href="audio.html" data-i18n="categories.audio">音频</a>
+                            <a href="business.html" data-i18n="categories.business">商业</a>
+                            <a href="marketing.html" data-i18n="categories.marketing">营销</a>
+                            <a href="detector.html" data-i18n="categories.detector">AI检测器</a>
+                            <a href="chatbot.html" data-i18n="categories.chatbot">聊天机器人</a>
+                            <a href="design.html" data-i18n="categories.design">设计与艺术</a>
+                        </div>
+                    </li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">AI模型</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn-submit">提交</button>
+                <button class="btn-login">登录</button>
+                <select class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <h1 data-i18n="page.writingTitle">文字与写作</h1>
+            <p data-i18n="page.writingDescription">发现最好的AI写作和文本处理工具。</p>
+        </section>
+
+        <section class="categories">
+            <h2>分类</h2>
+            <ul>
+                <li><a href="writing.html" data-i18n="categories.writing">文字与写作</a></li>
+                <li><a href="image.html" data-i18n="categories.image">图像生成</a></li>
+                <li><a href="video.html" data-i18n="categories.video">视频创作</a></li>
+                <li><a href="code.html" data-i18n="categories.code">代码助手</a></li>
+                <li><a href="audio.html" data-i18n="categories.audio">音频工具</a></li>
+                <li><a href="business.html" data-i18n="categories.business">商业工具</a></li>
+                <li><a href="marketing.html" data-i18n="categories.marketing">营销工具</a></li>
+                <li><a href="detector.html" data-i18n="categories.detector">AI检测器</a></li>
+                <li><a href="chatbot.html" data-i18n="categories.chatbot">聊天机器人</a></li>
+                <li><a href="design.html" data-i18n="categories.design">设计与艺术</a></li>
+            </ul>
+        </section>
+
+        <section class="tools-grid">
+            <!-- ChatGPT -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.9</div>
+                </div>
+                <div class="tool-content">
+                    <h3>ChatGPT</h3>
+                    <p data-i18n="tools.chatgpt.description">OpenAI开发的强大AI语言模型，支持写作、翻译和内容创作。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI写作</span>
+                        <span class="tag">通用助手</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://chat.openai.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI PDF Summarizer -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.8</div>
+                </div>
+                <div class="tool-content">
+                    <h3>AI PDF Summarizer</h3>
+                    <p data-i18n="tools.ai_pdf_summarizer.description">使用AI简化PDF！摘要、提取关键点、提问，并支持80多种语言翻译。</p>
+                    <div class="tool-tags">
+                        <span class="tag">文本摘要</span>
+                        <span class="tag">写作助手</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.aipdfsummarizer.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Writesonic -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Writesonic</h3>
+                    <p data-i18n="tools.writesonic.description">AI写作助手，可生成高质量的博客文章、广告和内容。</p>
+                    <div class="tool-tags">
+                        <span class="tag">内容创作</span>
+                        <span class="tag">营销文案</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://writesonic.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Copy.ai -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Copy.ai</h3>
+                    <p data-i18n="tools.copyai.description">AI驱动的写作工具，用于创建营销文案和社交媒体帖子。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI写作</span>
+                        <span class="tag">营销文案</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.copy.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOMO.ai -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.6</div>
+                </div>
+                <div class="tool-content">
+                    <h3>FOMO.ai</h3>
+                    <p data-i18n="tools.fomo.description">扩展你的AI营销团队，提供符合品牌的高质量内容。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI博主</span>
+                        <span class="tag">AI咨询助手</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://fomo.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jasper -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Jasper</h3>
+                    <p data-i18n="tools.jasper.description">专业的AI写作助手，支持长文创作和团队协作。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI写作</span>
+                        <span class="tag">团队协作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.jasper.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Notion AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Notion AI</h3>
+                    <p>集成在Notion中的AI写作助手，支持笔记整理和内容创作。</p>
+                    <div class="tool-tags">
+                        <span class="tag">笔记助手</span>
+                        <span class="tag">内容创作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.notion.so" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grammarly -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.4</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Grammarly</h3>
+                    <p>AI驱动的写作助手，提供语法检查和写作建议。</p>
+                    <div class="tool-tags">
+                        <span class="tag">语法检查</span>
+                        <span class="tag">写作改进</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.grammarly.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Claude -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.7</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Claude</h3>
+                    <p>Anthropic开发的AI助手，擅长写作、分析和编程任务。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI写作</span>
+                        <span class="tag">专业助手</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://claude.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Rytr -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.5</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Rytr</h3>
+                    <p>AI写作助手，支持多种写作场景和30多种语言。</p>
+                    <div class="tool-tags">
+                        <span class="tag">多语言</span>
+                        <span class="tag">内容创作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://rytr.me" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quillbot -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.4</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Quillbot</h3>
+                    <p>AI驱动的改写和润色工具，帮助优化文章表达。</p>
+                    <div class="tool-tags">
+                        <span class="tag">文本改写</span>
+                        <span class="tag">润色工具</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://quillbot.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- DeepL Write -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.4</div>
+                </div>
+                <div class="tool-content">
+                    <h3>DeepL Write</h3>
+                    <p>AI写作助手，专注于多语言写作和翻译优化。</p>
+                    <div class="tool-tags">
+                        <span class="tag">多语言写作</span>
+                        <span class="tag">翻译优化</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.deepl.com/write" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Wordtune -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.3</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Wordtune</h3>
+                    <p>AI写作助手，帮助改进句子表达和文章结构。</p>
+                    <div class="tool-tags">
+                        <span class="tag">写作改进</span>
+                        <span class="tag">内容优化</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.wordtune.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jenni AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.3</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Jenni AI</h3>
+                    <p>专为学术写作设计的AI助手，帮助撰写论文和研究报告。</p>
+                    <div class="tool-tags">
+                        <span class="tag">学术写作</span>
+                        <span class="tag">论文助手</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://jenni.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hemingway Editor -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.3</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Hemingway Editor</h3>
+                    <p>AI增强的写作编辑器，帮助提高文章的可读性和简洁性。</p>
+                    <div class="tool-tags">
+                        <span class="tag">写作编辑</span>
+                        <span class="tag">可读性优化</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://hemingwayapp.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Anyword -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Anyword</h3>
+                    <p>AI驱动的营销文案工具，专注于转化率优化。</p>
+                    <div class="tool-tags">
+                        <span class="tag">营销文案</span>
+                        <span class="tag">转化优化</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://anyword.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Writer -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Writer</h3>
+                    <p>企业级AI写作平台，确保团队写作风格的一致性。</p>
+                    <div class="tool-tags">
+                        <span class="tag">企业写作</span>
+                        <span class="tag">风格指南</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://writer.com" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Compose AI -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-rating">4.2</div>
+                </div>
+                <div class="tool-content">
+                    <h3>Compose AI</h3>
+                    <p>Chrome扩展程序，在任何网页上提供AI写作辅助。</p>
+                    <div class="tool-tags">
+                        <span class="tag">浏览器插件</span>
+                        <span class="tag">实时写作</span>
+                    </div>
+                </div>
+                <div class="tool-footer">
+                    <a href="https://www.compose.ai" target="_blank" class="btn-visit">访问网站</a>
+                    <button class="btn-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>关于</h3>
+                <ul>
+                    <li><a href="#">使用条款</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>email@toolify.ai</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>版权所有©2025年Ag-888。保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 
